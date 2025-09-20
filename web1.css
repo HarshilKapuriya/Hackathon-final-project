@@ -1,0 +1,141 @@
+/* General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+/* Heading */
+.container h1, .container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* File Input */
+input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 2px dashed #764ba2;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #f9f9ff;
+  font-weight: bold;
+  color: #764ba2;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.file-label:hover {
+  background: #764ba2;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  padding: 14px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Input for Add Admin */
+#addAdminInput {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 15px;
+  border: 2px solid #764ba2;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#addAdminInput:focus {
+  border-color: #667eea;
+}
+
+/* Status Box */
+.status-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f1f5ff;
+  font-size: 14px;
+  color: #333;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  min-height: 50px;
+  transition: all 0.3s ease;
+}
+
+#status {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 12px;
+  min-height: 60px;
+  text-align: center;
+  transition: all 0.3s ease;
+  word-break: break-word;
+}
+
+#status.info { background: #e6f0ff; color: #1a1a1a; border: 1px solid #667eea; }
+#status.success { background: #e6f7e6; color: #2b7a0b; border: 1px solid #2b7a0b; }
+#status.error { background: #ffe6e6; color: #b00020; border: 1px solid #b00020; }
+#status.warn { background: #fff4e6; color: #b76b00; border: 1px solid #b76b00; }
+
